@@ -1,0 +1,274 @@
+.visas {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 700px;
+}
+
+.pradzia {
+  flex-basis: 100%;
+  background-color: aqua;
+  height: 10%;
+}
+
+.pradzia > .pradziaImg {
+  max-height: 100%;
+}
+
+.deze {
+  display: flex;
+  flex-basis: 100%;
+  height: 90%;
+}
+
+.vidine-deze {
+  flex-basis: 80%;
+}
+
+.virsutine {
+  display: flex;
+  flex-direction: row;
+  height: calc(50/0.9*1%);
+}
+
+.kairine {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 43.75%;
+}
+
+.Ruda {
+  background-color: brown;
+  color: white;
+  height: 40%;
+}
+
+.didziausias:Hover~.paragrafas {
+  color: rgb(0, 255, 0);
+}
+
+.vidutinis:Hover~.pirmasParagrafas {
+  color: rgb(0, 255, 0);
+}
+
+.pirmasParagrafas:Hover~.antrasParagrafas {
+  color: rgb(0, 255, 0);
+}
+
+.Juoda {
+  background-color: black;
+  color: white;
+  height: 60%;
+
+}
+
+.desinine {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 56.25%;
+}
+
+.vidurine-deze {
+  display: flex;
+  height: 76%;
+}
+
+.Oranzine {
+  background-color: rgb(254, 202, 113);
+  flex-basis: calc(25/0.45*1%);
+}
+
+.Oranzine > img{
+  max-height: 70%;
+}
+
+.Melyna {
+  background-color: rgb(110, 110, 228);
+  flex-basis: calc(20/0.45*1%);
+  color: white;
+}
+
+.nuoroda:Hover~.informacija {
+  color: rgb(0, 255, 0);
+}
+
+.informacija:Hover~.informacija2{
+  color: rgb(0, 255, 0);
+}
+
+.Zalia {
+  background-color: rgb(88, 211, 123);
+  color: white;
+  height: 24%;
+}
+.apatine {
+  height: calc(40/0.9*1%);
+}
+
+.kursai:Hover~.kursai-lengviau {
+  color: rgb(1, 146, 1);
+}
+
+.kursai-lengviau:Hover~.kursai-lengviau-2{
+  color: rgb(1, 146, 1);
+}
+
+#Raudona {
+  background-color: rgba(251, 0, 0, 0.4);
+  flex-basis: 56.25%;
+}
+
+.Geltona {
+  background-color: rgb(255, 255, 142);
+  flex-basis: 43.75%;
+}
+
+.zodynas:Hover~.reikalinga-info {
+  color: rgb(0, 218, 0);
+}
+
+.reikalinga-info:Hover~.reikalinga-info2{
+  color: rgb(0, 218, 0);
+}
+
+.reikalinga-info2:Hover~.reikalinga-info3{
+  color: rgb(0, 218, 0);
+}
+
+.vidurine-deze-2 {
+  display: flex;
+  height: 100%;
+}
+
+.balta-erdve:Hover~.balta-erdve-2{
+  color: rgb(0, 218, 0);
+}
+
+.Balta {
+  flex-basis: 20%;
+  background-color: rgb(255, 255, 255);
+}
+canvas{
+  display: none;
+}
+button{
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .pradzia{
+    display: flex;
+  }
+  button{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    display: block;
+    box-shadow: 0px 2px #4096b8;
+    height: 20px;
+    border: 1.5px solid white;
+    border-radius: 3px;
+  }
+  canvas{
+    border: 2px solid rgb(52, 51, 62);
+    display: inline-block;
+  }
+  .Melyna{
+    display: none;
+  }
+
+  .Geltona{
+    display: none;
+  }
+
+  .Oranzine{
+    flex-basis: 100%;
+  }
+
+  #Raudona{
+    flex-basis: 100%;
+  }
+  @keyframes bounce{
+    0%, 100%, 20%, 50%, 80% {
+      transform: translateY(0)
+    }
+    40% {
+      transform: translateY(-20px)
+    }
+    60% {
+      transform: translateY(-15px)
+    }
+  }
+  
+  .pradzia:Hover~.deze .didziausias,.pradzia:Hover~.deze .paragrafas{
+    animation: bounce 3s infinite;
+  }
+  
+  .pradzia:Hover~.deze .tekstas{
+    animation: bounce 3s infinite;
+  }
+  
+  .pradzia:Hover~.deze .Balta > p{
+    animation: bounce 3s infinite;
+  }
+
+  @keyframes borderr{
+    0%{
+      border-style: none;
+    }
+    25%{
+      border-left: dashed 3px;
+    }
+    50%{
+      border-left: dashed 3px;
+      border-top: dashed 3px;
+    }
+    75%{
+      border-left: dashed 3px;
+      border-top: dashed 3px;
+      border-right: dashed 3px;
+    }
+    100%{
+      border-left: dashed 3px;
+      border-top: dashed 3px;
+      border-right: dashed 3px;
+      border-bottom: dashed 3px;
+    }
+  }
+
+  .Ruda {
+    background-color: brown;
+    color: white;
+    height: 40%;
+  }
+  
+  .Ruda:Hover{
+     animation: borderr 3s;
+  }
+
+  @keyframes pulsing{
+    0% {
+      font-size: 1em;
+    }
+    20%{
+      font-size: 1.1em;
+    }
+    35%{
+      font-size: 1em;
+    }
+    50%{
+      font-size: 1.1em;
+    }
+    65%{
+      font-size: 1em;
+    }
+    80%{
+      font-size: 1.1em;
+    }
+    100% {
+      font-size: 1em;
+    }
+  }
+  
+  .apie-react:Hover{
+    animation: pulsing 3s;
+  }
+}
